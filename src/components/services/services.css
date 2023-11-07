@@ -1,0 +1,136 @@
+.s-container {
+  background-color: #f9f5ed;
+  position: relative;
+}
+
+.s-container .swiper {
+  position: unset !important;
+}
+
+.flex-s-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 15rem;
+}
+
+.lead-text h1 {
+  font-size: 51px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.s-description {
+  color: #8a8a8a;
+  width: 40%;
+}
+
+.s-description-card {
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  background-color: white;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cards:hover {
+  background-color: rgb(206, 160, 77);
+}
+
+.cards:hover span,
+.cards:hover p,
+.cards:hover h3,
+.cards:hover .arrow-icon {
+  color: white;
+}
+
+.arrow-icon {
+  font-size: 21px;
+}
+
+.cards p {
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.cards span {
+  font-size: 46px;
+  color: rgb(206, 160, 77);
+}
+
+.s-container .swiper-slide {
+  width: 30% !important;
+}
+
+.s-container .swiper-button-next {
+  background-image: url(../../images/s-arrow-next.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 40px !important;
+  position: absolute;
+  top: 23%;
+  right: 8%;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.s-container .swiper-button-prev {
+  background-image: url(../../images/s-arrow-prev.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 40px !important;
+  top: 23%;
+  left: 86%;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1250px) {
+  .s-container .swiper-slide {
+    width: 40% !important;
+  }
+
+  .flex-s-container {
+    gap: 3rem;
+  }
+
+  .s-description {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .s-container .swiper-button-next,
+  .s-container .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .s-container .swiper-slide {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .s-container .swiper-slide {
+    width: 90% !important;
+  }
+
+  .flex-s-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

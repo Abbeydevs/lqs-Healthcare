@@ -1,0 +1,78 @@
+.carousel {
+  padding: 15rem 300px;
+  text-align: center;
+  color: white;
+}
+
+.c-title {
+  font-size: 71px;
+  font-weight: 700;
+}
+
+.c-btn {
+  background-color: #cea04d;
+  margin: auto;
+  color: white;
+}
+
+.carousel-bg1 {
+  background-image: url(../../images/bg1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-bg2 {
+  background-image: url(../../images/bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-bg3 {
+  background-image: url(../../images/bg-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1440px) {
+  .carousel {
+    padding: 15rem 200px;
+  }
+
+  .c-title {
+    font-size: 61px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .carousel {
+    padding: 15rem 100px;
+  }
+
+  .c-title {
+    font-size: 51px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carousel {
+    padding: 10rem 100px;
+  }
+
+  .c-title {
+    font-size: 41px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel {
+    padding: 10rem 100px;
+  }
+
+  .c-title {
+    font-size: 31px;
+  }
+}
